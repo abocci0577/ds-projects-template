@@ -3,6 +3,10 @@
 Repository containing scaffolding for a Python 3-based data science project. Project organization 
 is based on ideas from [_Good Enough Practices for Scientific Computing_](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510).
 
+## Creating a new project from this template
+
+Simpy follow the [instructions](https://help.github.com/en/articles/creating-a-repository-from-a-template) to create a new project repository from this template.
+
 ## Project organization
 
 1. Put each project in its own directory, which is named after the project.
