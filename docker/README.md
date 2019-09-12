@@ -24,6 +24,9 @@ $ docker container run \
   --tty \
   --volume ../bin:/home/$USER/app/bin \
   --volume ../data:/home/$USER/app/data \ 
+  --volume ../doc:/home/$USER/app/doc \
+  --volume ../notebooks:/home/$USER/app/notebooks \
+  --volume ../results:/home/$USER/app/results \
   --volume ../src:/home/$USER/app/src \
   --publish 8888:8888 \
   $IMAGE_NAME:$IMAGE_TAG

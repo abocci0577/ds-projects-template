@@ -17,6 +17,7 @@ services:
       - ../bin:/home/${USER}/app/bin
       - ../data:/home/${USER}/app/data
       - ../doc:/home/${USER}/app/doc
+      - ../notebooks:/home/${USER}/app/notebooks
       - ../results:/home/${USER}/app/results
       - ../src:/home/${USER}/app/src
     init: true
