@@ -33,8 +33,8 @@ command.
 $ conda activate ./env
 ```
 
-Note that the `env` directory is *intentionally* not under version control as it can always be 
-re-created from the `environment.yml` file as necessary.
+Note that the `env` directory is *not* under version control as it can always be re-created from 
+the `environment.yml` file as necessary.
 
 ### Updating the Conda environment
 
