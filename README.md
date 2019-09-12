@@ -1,6 +1,7 @@
 # python-data-science-project
 
-Repository containing scaffolding for a language agnostic data science project. Project organization is based on ideas from [_Good Enough Practices for Scientific Computing_](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510).
+Repository containing scaffolding for a Python 3-based data science project. Project organization 
+is based on ideas from [_Good Enough Practices for Scientific Computing_](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510).
 
 ## Project organization
 
