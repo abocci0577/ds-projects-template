@@ -1,13 +1,14 @@
 # python-data-science-project
 
-Repository containing scaffolding for a Python 3-based data science project. Project organization 
-is based on ideas from [_Good Enough Practices for Scientific Computing_](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510).
+Repository containing scaffolding for a Python 3-based data science project. 
 
 ## Creating a new project from this template
 
 Simply follow the [instructions](https://help.github.com/en/articles/creating-a-repository-from-a-template) to create a new project repository from this template.
 
 ## Project organization
+
+Project organization is based on ideas from [_Good Enough Practices for Scientific Computing_](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510).
 
 1. Put each project in its own directory, which is named after the project.
 2. Put external scripts or compiled programs in the `bin` directory.
@@ -20,7 +21,7 @@ Simply follow the [instructions](https://help.github.com/en/articles/creating-a-
 9. Put project source code in the `src` directory.
 10. Name all files to reflect their content or function.
 
-## Conda environments
+## Using Conda
 
 ### Creating the Conda environment
 
@@ -48,6 +49,14 @@ already been created, then you can update the environment with the following com
 
 ```bash
 $ conda env update --prefix ./env --file environment.yml --prune
+```
+
+### Listing the full contents of the Conda environment
+
+$nvironment run the following command.
+
+```bash
+conda list --prefix ./env
 ```
 
 ## Using Docker
