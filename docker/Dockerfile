@@ -5,9 +5,9 @@ LABEL maintainer="pughdr <david.pugh@kaust.edu.sa>"
 SHELL [ "/bin/bash", "-c" ]
 
 # Create a non-root user
-ARG username
-ARG uid
-ARG gid
+ARG username=al-khawarizmi
+ARG uid=1000
+ARG gid=100
 ENV USER ${username}
 ENV UID ${uid}
 ENV GID ${gid}
