@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3:4.6.14
 
-MAINTAINER pughdr <david.pugh@kaust.edu.sa>
+LABEL maintainer="pughdr <david.pugh@kaust.edu.sa>"
 
 SHELL [ "/bin/bash", "-c" ]
 
