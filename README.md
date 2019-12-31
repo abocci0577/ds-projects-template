@@ -42,6 +42,17 @@ $ conda activate ./env
 Note that the `env` directory is *not* under version control as it can always be re-created from 
 the `environment.yml` file as necessary.
 
+### Building JupyterLab extensions (optional)
+
+If you wish to use any JupyterLab extensions included in the `environment.yml` file 
+then you need to activate the environment and rebuild the JupyterLab application using 
+the following commands to source the `postBuild` script.
+
+```bash
+$ conda activate $ENV_PREFIX # optional if environment already active
+(/path/to/env) $ . postBuild
+```
+
 ### Updating the Conda environment
 
 If you add (remove) dependencies to (from) the `environment.yml` file after the environment has 
