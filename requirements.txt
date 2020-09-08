@@ -1,0 +1,2 @@
+## Put here package to be installed with `pip` (last resort if you canno use conda install)
+#jupyterlab_sql==0.3.*

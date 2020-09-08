@@ -1,0 +1,10 @@
+#!/bin/bash
+set -ex
+
+docker image build \
+    --build-arg username=$USER \
+    --build-arg uid=$UID \
+    --build-arg gid=$GID \
+    --tag "$IMAGE_NAME:$IMAGE_TAG" \
+    --file Dockerfile \
+    ../

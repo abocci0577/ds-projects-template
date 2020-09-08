@@ -1,0 +1,17 @@
+name: null
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - graphviz
+  - ipykernel
+  - numpy
+  - pandas
+  - pyarrow
+  - scikit-learn
+  - seaborn
+  - lightgbm
+  - matplotlib
+  - nbconvert
