@@ -30,7 +30,35 @@ Simply follow the [instructions](https://help.github.com/en/articles/creating-a-
 
 **Option 2 (manually):**
 
-**NOTE**: If you don't need the project to be _git-aware_, just do `rm -rf .git*` after cloning. It will detach the directory from Git and will be purely local.
+In a terminal:
+```
+# The name of your project
+PROJECT_NAME=ds-project-name 
+
+## this repo
+TEMPLATE_NAME=ds-projects-template
+TEMPLATE_REPO=git@github.com:abocci0577/ds-projects-template.git
+
+##
+git clone $TEMPLATE_REPO
+mv $TEMPLATE_NAME $PROJECT_NAME
+cd $PROJECT_NAME
+rm -rf .git ## stop here if you don't want the project in git
+
+## attach to git (optional)
+## - First create a new repo (i.e. called with same name of the project) in your GitHub account
+## - Don't initialize it with a README, .gitignore, or license.
+REPO_NAME=$PROJECT_NAME   # REPO_NAME and PROJECT_NAME can be different
+GITHUB_USER=abocci0577    # your Github username
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin git@github.com:$GITHUB_USER/$REPO_NAME
+git push -u --force origin master
+```
+
+**NOTE**: If you don't need the project to be _git-aware_, just stop at the  `rm -rf .git*` stage. It will detach the directory from Git and will be purely local.
 
 
 
