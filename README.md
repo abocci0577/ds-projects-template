@@ -165,7 +165,14 @@ after the environment has already been created, then you can re-create the envir
 following command.
 
 ```bash
+## update (prune will remove obsolete dependences)
+
+$ conda env update --prefix ./env --file environment.yml  --prune
+$ conda env update --prefix $ENV_PREFIX  --file environment.yml  --prune
+
 $ conda env create --prefix $ENV_PREFIX --file environment.yml --force
+
+
 ```
 
 ## Using Docker
