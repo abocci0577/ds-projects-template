@@ -110,6 +110,7 @@ Instead to run manually (`pip install -r requirement.txt`), do it within `enviro
 ```bash
     dependencies:
       - <other packages>
+      - channel::package=X,Y,Z    ## for a package from a specific channel			
       - pip:
         - -r file:requirement.txt
 ```
