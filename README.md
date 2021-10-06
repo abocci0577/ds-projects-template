@@ -125,10 +125,13 @@ conda activate $ENV_PREFIX
 
 Note that the `ENV_PREFIX` directory is *not* under version control as it can always be re-created as necessary.
 
-If you wish to use any JupyterLab extensions included in the `environment.yml` and `requirements.txt` 
-files then you need to activate the environment and rebuild the JupyterLab application using the 
-following commands to source the `postBuild` script.
+If you wish to have the kernel for this envinroment in a JupyterLab instance from a Jupyter server in `base`, you need to add it with:
+```bash
+## put the kernel in the right place
+ipython kernel install --user --name=$PROJECT_NAME
+```
 
+This is already in `postBuild` so just do:
 ```bash
 conda activate $ENV_PREFIX # optional if environment already active
 . postBuild
