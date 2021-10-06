@@ -1,6 +1,9 @@
 #!/bin/bash
 
 ## Add everything here that need to be executed after the conda enviroment creation
-jupyter labextension install --no-build @pyviz/jupyterlab_pyviz
-jupyter serverextension enable jupyterlab_sql --py --sys-prefix
-jupyter lab build
+#jupyter labextension install --no-build @pyviz/jupyterlab_pyviz
+#jupyter serverextension enable jupyterlab_sql --py --sys-prefix
+#jupyter lab build
+
+## put the kernel in the right place
+ipython kernel install --user --name=$PROJECT_NAME
